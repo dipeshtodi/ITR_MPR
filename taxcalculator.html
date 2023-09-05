@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class=" container mx-auto p-4">
+        <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Income Details</h2>
+
+            <!-- Salary Input Box -->
+            <div class="mb-4 flex">
+                <label for="salary" class="block w-1/4 font-semibold mb-1">Gross Salary:</label>
+                <input type="number" id="salary" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter salary amount">
+            </div>
+
+            <!-- Exemption Input Box -->
+            <div class="mb-4 flex">
+                <label for="exemption" class="block w-1/4 font-semibold mb-1">Exemption:</label>
+                <input type="number" id="exemption" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter exemption amount">
+            </div>
+
+            <!-- Deduction Input Box -->
+            <div class="mb-4 flex">
+                <label for="deduction" class="block w-1/4 font-semibold mb-1">Deduction:</label>
+                <input type="number" id="deduction" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter deduction amount">
+            </div>
+
+            <!-- Interest on Borrowed Capital -->
+            <div class="mb-4 flex">
+                <label for="borrowedCapital" class="block w-1/4 font-semibold mb-1">Borrowed Capital:</label>
+                <input type="number" id="borrowedCapital" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter borrowed capital amount">
+            </div>
+
+            <!-- Unrealized Rent Input Box -->
+            <div class="mb-4 flex">
+                <label for="unrealizedRent" class="block w-1/4 font-semibold mb-1">Unrealized Rent:</label>
+                <input type="number" id="unrealizedRent" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter unrealized rent amount">
+            </div>
+
+            <!-- Municipal Taxes Input Box -->
+            <div class="mb-4 flex">
+                <label for="municipalTaxes" class="block w-1/4 font-semibold mb-1">Municipal Taxes (Yearly):</label>
+                <input type="number" id="municipalTaxes" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter municipal taxes amount">
+            </div>
+
+            <!-- Display Total Income -->
+            <div class="mb-4">
+                <p class="font-semibold">Total Income: <span id="totalIncome">0</span></p>
+            </div>
+
+            <!-- Display Interest on Borrowed Capital -->
+            <div class="mb-4">
+                <p class="font-semibold">Interest on Borrowed Capital: <span id="interestOnCapital">0</span></p>
+            </div>
+            
+            <!-- Display Total -->
+            <div class="mb-4">
+                <p class="font-semibold">Total: <span id="total">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto p-4">
+        <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Income from Buisness/Other profession:</h2>
+
+            <!-- Salary Input Box -->
+            <div class="mb-4 flex">
+                <label for="salary" class="block w-1/4 font-semibold mb-1">Income 1:</label>
+                <input type="number" id="salary" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter salary amount">
+            </div>
+
+            <!-- Exemption Input Box -->
+            <div class="mb-4 flex">
+                <label for="exemption" class="block w-1/4 font-semibold mb-1">Income 2:</label>
+                <input type="number" id="exemption" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter exemption amount">
+            </div>
+
+            <!-- Deduction Input Box -->
+            <div class="mb-4 flex">
+                <label for="deduction" class="block w-1/4 font-semibold mb-1">Income 3:</label>
+                <input type="number" id="deduction" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter deduction amount">
+            </div>
+
+            <div class="mb-4">
+                <p class="font-semibold">Total Income: <span id="totalIncome">0</span></p>
+            </div>
+            
+            <div class="mb-4">
+                <p class="font-semibold">Total: <span id="total">0</span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
