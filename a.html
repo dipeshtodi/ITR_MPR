@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        /* Your existing CSS styles */
+
+/* Additional styles for the navigation bar */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #333;
+    top: 100%;
+    left: 0;
+    padding: 10px 0;
+}
+
+
+.dropdown input[type="checkbox"]:checked + label + ul {
+    display: block;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    .navbar.show {
+        display: flex;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="logo"><a href="index2.html">FITBIT</a></div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index3.html">Home</a></li>
+                    <li><a href="bmi.html">BMI</a></li>
+                    <li><a href="index3.html">About Us</a></li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="blog-toggle">
+                        <label for="blog-toggle">Blog &#9660;</label>
+                        <ul class="dropdown-menu">
+                            <li><a href="https://breakingmuscle.com/">Blog 1</a></li>
+                            <li><a href="https://www.advancedhumanperformance.com/blog">Blog 2</a></li>
+                            <li><a href="https://lindywell.com/blog/">Blog 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index3.html">Products</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- The rest of your content goes here -->
+
+
+    <footer>
+        <p>&copy; 2023 Dashboard. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript code to handle navigation
+document.addEventListener("DOMContentLoaded", function () {
+    // Get all section links
+    const sectionLinks = document.querySelectorAll("nav a");
+
+    // Attach click event listeners to section links
+    sectionLinks.forEach(function (link) {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            // Get the target section's id from the href attribute
+            const targetId = link.getAttribute("href").substr(1);
+            // Scroll to the target section
+            scrollToSection(targetId);
+        });
+    });
+});
+
+// Function to scroll to a section by id
+function scrollToSection(targetId) {
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+        // Use smooth scrolling behavior
+        targetSection.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    }
+}
+
+// Sample code to load content dynamically (you can replace this with your own logic)
+document.addEventListener("DOMContentLoaded", function () {
+    // Load content for the Overview section
+    const overviewSection = document.getElementById("overview");
+    overviewSection.innerHTML = "<h2>Overview Content</h2><p>This is the overview section.</p>";
+
+    // Load content for the Tax Filing section
+    const taxFilingSection = document.getElementById("tax-filing");
+    taxFilingSection.innerHTML = "<h2>Tax Filing Content</h2><p>This is the tax filing section.</p>";
+
+    // Load content for the Reports section
+    const reportsSection = document.getElementById("reports");
+    reportsSection.innerHTML = "<h2>Reports Content</h2><p>This is the reports section.</p>";
+
+    // Load content for the Settings section
+    const settingsSection = document.getElementById("settings");
+    settingsSection.innerHTML = "<h2>Settings Content</h2><p>This is the settings section.</p>";
+});
+
+    </script>
+</body>
+</html>

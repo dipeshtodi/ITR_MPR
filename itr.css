@@ -8,6 +8,7 @@
 body{
         margin: 0;
         padding: 0;
+        background-color: #007BFF;
         background-image: url("gym2.jpeg");
         background-size: cover;
         background-position: center;
@@ -23,7 +24,7 @@ body{
   transform: translate(-50%,-50%);
   max-width: 430px;
   width: 100%;
-  background: #007BFF;
+  background: white;
   border-radius: 7px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.3)
 }
@@ -93,5 +94,20 @@ body{
 .signup label:hover{
   text-decoration: underline;
 }
-
+.navbar {
+    background:  #007BFF;
+}
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+.navbar-dark .navbar-nav .nav-link:not(.disabled):hover {
+    color: #007BFF;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-color: #FF5733;
+}
+.btn-outline-warning {
+    background: linear-gradient(135deg, #FFA07A, #FF5733);
+    border-color: #FF5733;
+}
 

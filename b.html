@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Return Dashboard</title>
+    <style>
+        /* Your CSS styles for the dashboard */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Add your additional styles for the dashboard components */
+
+        /* Form styles */
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Income Tax Return Dashboard</h1>
+    </header>
+    <div class="container">
+        <h2>User Information</h2>
+        <form id="userInfoForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="income">Income:</label>
+            <input type="text" id="income" name="income" required>
+
+            <label for="deductions">Deductions:</label>
+            <input type="text" id="deductions" name="deductions" required>
+
+            <label for="taxRate">Tax Rate:</label>
+            <input type="text" id="taxRate" name="taxRate" required>
+
+            <button type="button" id="submitButton">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        // Your JavaScript code for the dashboard functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            const submitButton = document.getElementById('submitButton');
+
+            submitButton.addEventListener('click', function () {
+                const name = document.getElementById('name').value;
+                const income = document.getElementById('income').value;
+                const deductions = document.getElementById('deductions').value;
+                const taxRate = document.getElementById('taxRate').value;
+
+                // You can use this data for further processing or storage
+                console.log('User Information:');
+                console.log('Name:', name);
+                console.log('Income:', income);
+                console.log('Deductions:', deductions);
+                console.log('Tax Rate:', taxRate);
+
+                // Optionally, you can clear the form fields after submission
+                document.getElementById('name').value = '';
+                document.getElementById('income').value = '';
+                document.getElementById('deductions').value = '';
+                document.getElementById('taxRate').value = '';
+            });
+        });
+    </script>
+</body>
+</html>

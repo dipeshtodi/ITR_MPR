@@ -3,117 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Income Tax Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* Custom styles */
-        body {
-            background-color: #1E3A8A;
-            color: #FFFFFF;
-        }
-        .dashboard-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin: 20px;
-            padding: 20px;
-        }
-        .dashboard-box {
-            background-color: #21409A;
-            border-radius: 10px;
-            padding: 20px;
-        }
-        .dashboard-box h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .user-profile {
-            /* Add user profile styles here */
-        }
-        .tax-deductions {
-            /* Add tax deductions styles here */
-        }
-        .filing-status {
-            /* Add filing status styles here */
-        }
-        .filing-time {
-            /* Add filing time styles here */
-        }
-        /* Add your additional custom styles here */
-    </style>
+    <title>Professional Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="dashboard-container">
-        <!-- User Profile -->
-        <div class="dashboard-box user-profile">
-            <h2>User Profile</h2>
-            <div class="user-info">
-                <p><strong>Name:</strong> John Doe</p>
-                <p><strong>Email:</strong> john@example.com</p>
-                <p><strong>Address:</strong> 123 Main St, City</p>
-                <!-- Add more user information here -->
-            </div>
-        </div>
-        <!-- Tax Deductions -->
-        <div class="dashboard-box tax-deductions">
-            <h2>Tax Deductions</h2>
-            <div class="deductions-list">
-                <ul>
-                    <li><strong>Home Loan Interest:</strong> $5,000</li>
-                    <li><strong>Health Insurance:</strong> $1,000</li>
-                    <!-- Add more deductions here -->
-                </ul>
-            </div>
-        </div>
-        <!-- Filing Status -->
-        <div class="dashboard-box filing-status">
-            <h2>Filing Status</h2>
-            <div class="status-info">
-                <p><strong>Status:</strong> Single</p>
-                <p><strong>Income Year:</strong> 2023</p>
-                <!-- Add more filing status information here -->
-            </div>
-        </div>
-        <!-- Filing Time with Graph -->
-        <div class="dashboard-box filing-time">
-            <h2>Filing Time with Graph</h2>
-            <div id="graph-container">
-                <!-- Add graph content here using JavaScript -->
-                <canvas id="filingTimeChart"></canvas>
-            </div>
-        </div>
-    </div>
-    <!-- Back to Home Button -->
-    <div class="text-center">
-        <a href="#" class="bg-white text-blue-500 hover:bg-blue-500 text-sm py-2 px-4 rounded-full inline-block mt-4">Back to Home</a>
-    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/services">Services</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Add JavaScript code for the graph here -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        // Sample JavaScript for creating a graph (using Chart.js)
-        // You can replace this with your actual graph code
-        const ctx = document.getElementById('filingTimeChart').getContext('2d');
-        const chart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
-                datasets: [{
-                    label: 'Filing Time (in hours)',
-                    data: [10, 15, 13, 20, 17, 22],
-                    borderColor: 'rgba(75, 192, 192, 1)',
-                    borderWidth: 2,
-                    fill: false,
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-    </script>
+    <main>
+        <section class="hero">
+            <h1>Welcome to Our Website</h1>
+            <p>Your trusted source for web solutions.</p>
+            <a href="/contact" class="cta-button">Contact Us</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h2>Quality Services</h2>
+                <p>We provide high-quality web services to meet your needs.</p>
+            </div>
+            <div class="feature">
+                <h2>Experienced Team</h2>
+                <p>Our team of experts is dedicated to delivering the best results.</p>
+            </div>
+            <div class="feature">
+                <h2>Client Satisfaction</h2>
+                <p>Our goal is to ensure our clients' satisfaction with our work.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Professional Website. All rights reserved.</p>
+    </footer>
 </body>
 </html>
