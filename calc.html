@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaxEase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-green-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="text-white text-2xl font-semibold">
+            <a href="/">EaseTax</a>
+          </div>
+      
+    <ul class="flex space-x-6 text-white">
+            <li><a href="/">Home</a></li>
+            <li><a href="/file-taxes">File Taxes</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+          </ul>
+      
+          <!-- Signin/Login Button -->
+          <div>
+            <a href="signin" class="bg-white text-green-500 hover:bg-green-700 hover:text-white py-2 px-4 rounded-full transition duration-300 ease-in-out">Sign In</a>
+          </div>
+        </div>
+    </nav>
+<body>
+    <div class=" container mx-auto p-4">
+        <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Income Details</h2>
+
+            <!-- Salary Input Box -->
+            <div class="mb-4 flex">
+                <label for="salary" class="block w-1/4 font-semibold mb-1">Gross Salary:</label>
+                <input type="number" id="salary" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter salary amount">
+            </div>
+
+            <!-- Exemption Input Box -->
+            <div class="mb-4 flex">
+                <label for="exemption" class="block w-1/4 font-semibold mb-1">Exemption:</label>
+                <input type="number" id="exemption" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter exemption amount">
+            </div>
+
+            <!-- Deduction Input Box -->
+            <div class="mb-4 flex">
+                <label for="deduction" class="block w-1/4 font-semibold mb-1">Deduction:</label>
+                <input type="number" id="deduction" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter deduction amount">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto p-4">
+        <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Income from Business:</h2>
+
+            <!-- Business income -->
+            <div class="mb-4 flex">
+                <label for="business" class="block w-1/4 font-semibold mb-1">Presumptive Income:</label>
+                <input type="number" id="business" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter income from Business">
+            </div>
+
+            <!-- Other business income -->
+            <div class="mb-4 flex">
+                <label for="otherBusiness" class="block w-1/4 font-semibold mb-1">Income from Other Sources:</label>
+                <input type="number" id="otherBusiness" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter income from other business sources">
+            </div>
+        </div>
+    </div>
+    <div class=" container mx-auto p-4">
+        <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Income from House Property</h2>
+
+            <!-- Annual rental income -->
+            <div class="mb-4 flex">
+                <label for="rent" class="block w-1/4 font-semibold mb-1">Annual rent received:</label>
+                <input type="number" id="rent" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter annual rent received">
+            </div>
+
+            <!-- Unrealized Rent Input Box -->
+            <div class="mb-4 flex">
+                <label for="unrealizedRent" class="block w-1/4 font-semibold mb-1">Unrealized Rent:</label>
+                <input type="number" id="unrealizedRent" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter unrealized rent amount">
+            </div>
+
+            <!-- Municipal Taxes Input Box -->
+            <div class="mb-4 flex">
+                <label for="municipalTaxes" class="block w-1/4 font-semibold mb-1">Municipal Taxes (Yearly):</label>
+                <input type="number" id="municipalTaxes" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter municipal taxes amount">
+            </div>
+        </div>
+    </div>
+    <div class=" container mx-auto p-4">
+        <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Income from Other Sources</h2>
+
+            <!-- Interest from bank -->
+            <div class="mb-4 flex">
+                <label for="interest" class="block w-1/4 font-semibold mb-1">Interest from Bank Account:</label>
+                <input type="number" id="interest" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter the amount">
+            </div>
+
+            <!-- Lottery income -->
+            <div class="mb-4 flex">
+                <label for="lottery" class="block w-1/4 font-semibold mb-1">Winning from Lottery,quiz,etc.</label>
+                <input type="number" id="lottery" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter the amount">
+            </div>
+
+            <!-- Commission income -->
+            <div class="mb-4 flex">
+                <label for="commission" class="block w-1/4 font-semibold mb-1">Commission/Brokerage Income</label>
+                <input type="number" id="commission" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter the amount">
+            </div>
+            <!-- Other income -->
+            <div class="mb-4 flex">
+                <label for="otherIncome" class="block w-1/4 font-semibold mb-1">Other Income</label>
+                <input type="number" id="otherIncome" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter the amount">
+            </div>
+        </div>
+    </div>
+    <div class=" container mx-auto p-4">
+        <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Deduction Details</h2>
+
+            <!-- 80C - LIC,PPF,Repayment of housing loan -->
+            <div class="mb-4 flex">
+                <label for="D80C" class="block w-1/4 font-semibold mb-1">Deductions u/s 80C -(LIC,PPF,Repayment of housing loan)</label>
+                <input type="number" id="80C" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter deduction amount">
+            </div>
+
+            <!-- 80CCD(1) -->
+            <div class="mb-4 flex">
+                <label for="D80CCD1" class="block w-1/4 font-semibold mb-1">80 CCD(1) - Employee's contribution to NPS</label>
+                <input type="number" id="D80CCD1" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter deduction amount">
+            </div>
+
+            <!-- 80CCD(2) -->
+            <div class="mb-4 flex">
+                <label for="D80CCD2" class="block w-1/4 font-semibold mb-1">80 CCD(2) - Employer's contribution to NPS</label>
+                <input type="number" id="D80CCD2" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter deduction amount">
+            </div>
+            <!-- Mediclaim Premium -->
+            <div class="mb-4 flex">
+                <label for="D80D" class="block w-1/4 font-semibold mb-1">80D (Mediclaim Premium)</label>
+                <input type="number" id="D80D" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter deduction amount">
+            </div>
+            <div class="mb-4 flex">
+                <label for="D80G" class="block w-1/4 font-semibold mb-1">80G (Donations)</label>
+                <input type="number" id="D80G" class="w-3/4 px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" placeholder="Enter deduction amount">
+            </div>
+        </div>
+    </div>
+
+    <div class=" container mx-auto p-4">
+        <div class="bg-gray-200 p-4 rounded-lg shadow-lg">
+            <h2 class="text-2xl font-semibold mb-4">Total Income Details</h2>
+    <!-- Display Total Income -->
+    <div class="mb-4">
+        <p class="font-semibold">Total Income: <span id="totalIncome">0</span></p>
+    </div>
+
+    <!-- Display Interest on Borrowed Capital -->
+    <div class="mb-4">
+        <p class="font-semibold">Interest on Borrowed Capital: <span id="interestOnCapital">0</span></p>
+    </div>
+    
+    <!-- Display Total -->
+    <div class="mb-4">
+        <p class="font-semibold">Total: <span id="total">0</span></p>
+    </div>
+ </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+<footer class="bg-black text-white py-6">
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Contact Information -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Contact Us</h3>
+          <p>Phone: +91 123-456-7890</p>
+          <p>Email: info@EaseTax.org</p>
+          <p>Address: Mumbai</p>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
+          <ul>
+            <li><a href="#">Emergency Resources</a></li>
+            <li><a href="#">News Updates</a></li>
+            <li><a href="#">Safety Tips</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <!-- Social Media and Newsletter -->
+        <div>
+          <h3 class="text-lg font-semibold mb-3">Connect With Us</h3>
+          <div class="flex space-x-4">
+            <a href="#" class="glow-text">Facebook</a>
+            <a href="#" class="glow-text">Twitter</a>
+            <a href="#" class="glow-text">Instagram</a>
+          </div>
+          <p>Subscribe to our Newsletter:</p>
+          <form class="mt-2">
+            <input type="email" placeholder="Your Email" class="w-full py-2 px-3 bg-gray-800 border border-gray-600 rounded-full text-white focus:outline-none focus:border-blue-500">
+            <button type="submit" class="mt-2 glow-button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <!-- Copyright and Disclaimer -->
+      <div class="mt-6 text-center">
+        <p>&copy; 2023 Ease-Tax All rights reserved.</p>
+        <p>Disclaimer: This website is for informational purposes only.</p>
+      </div>
+    </div>
+</footer>
+</html>
+
+
+
